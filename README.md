@@ -4,9 +4,20 @@ Required sections:
 
 ## System Overview
 
-### Description of the automated supply chain incident processing system and its business impact for PepsiCo operations
+### When there were delays in PepsiCo's delieveries to tehir customers, a need was identified for an intelligent solution to calculate possible routes and timeng to identify the option that has the least financial impact. The devolpers were task with creating a solution by utulizing agents. 
+
+### The process begins with the custom application, the custom application has tables where  customers and delievery routes data can be captured, recorded to save for calculation and hestorital purposes. After the table and records are made available agents can be created to utilize, analyze and quantify on the data. 
+
+![Diagram](Diagram2.png) - Custom Application Image of customer data  
+
+### One agent was created to perform the financial analysis and the second to make a decision be selecting the appropriate route and sending that information into an external agent and the MCP servers to then be actioned upon in a workflow. As each agent performs its task/step the status is updated on the Delivery Route record so the team is aware of its progress through the workflow. 
+
+![Diagram](Diagram3.png) - Image of Record With State Changed and calculation populated
+
+### Once all the information has been returned from the agents and a route is selected then it is actioned open by the logistics company and will return the final state of dispateched, from the external AI agent and MCP servers. 
 
 ## Implementation Steps 
+
 ### Key architectural decisions, AI agent configuration choices, and integration approaches used
 
 ## Architecture Diagram
