@@ -12,6 +12,8 @@ Required sections:
 ## Architecture Diagram
 ### Visual representation of the complete workflow showing ServiceNow agents, n8n coordination, and external system integration
 
+![Diagram](Diagram.png)
+
 ## Optimization 
 ### Analysis of how you optimized the system for efficiency, reliability, and performance. Document specific optimizations implemented (such as webhook URL configuration, script efficiency improvements, error handling enhancements, or workflow streamlining) and identify future optimization opportunities (such as caching strategies, parallel processing possibilities, advanced error recovery mechanisms, or enhanced monitoring capabilities).
 
