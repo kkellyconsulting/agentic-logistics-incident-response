@@ -52,13 +52,26 @@ Required sections:
 ## Architecture Diagram
 ### Visual representation of the complete workflow showing ServiceNow agents, n8n coordination, and external system integration
 
-![Diagram](Diagram.png)
+![Diagram](Diagram.png) - Completed visual Workflow 
 
 ## Optimization 
+
 ### Analysis of how you optimized the system for efficiency, reliability, and performance. Document specific optimizations implemented (such as webhook URL configuration, script efficiency improvements, error handling enhancements, or workflow streamlining) and identify future optimization opportunities (such as caching strategies, parallel processing possibilities, advanced error recovery mechanisms, or enhanced monitoring capabilities).
+
+### Script Efficiency 
+### Would like to implement second agent via script as well if possible
+### Improvements - Utilizing another agent to review the proposed solutions, selected decisions and cross reference with other data values like date, location, etc. Could look to adinetfy triends around either seasons, or regianally that they can potentially look to plan ahead for in the future and scale up or down effectevely. 
 
 ## Testing Results
 ### Evidence of successful end-to-end system operation with specific examples of financial analysis, routing decisions, and external execution
 
+![Diagram](Diagram3.png) - Image of Record With State Changed and calculation populated
+
+![Diagram](Diagram8.png) - Image of Routing Decision Produced by Decision Tool
+
+![Diagram](Diagram9.png) - Image of it capturing and sending with webhook data over 
+
 ## Business Value
 ### Analysis of how the system improves PepsiCo's supply chain operations, reduces manual intervention, and optimizes delivery cost management
+
+### By implmentation of this solution, PepsiCO now has quantifiable data on how delivery delays effect their bottom line. If there are scenarios where there are icreased delays with a particular logistics company they will know the dollar value associated and depending on the impact look to outsource their business to another logistics company. ULtimately this provides them with additional data they can continue to use to either look at historically and look to identify trends and perform preductions. 
