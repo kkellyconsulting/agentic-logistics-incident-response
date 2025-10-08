@@ -71,6 +71,8 @@ Required sections:
 
 ![Diagram](Diagram9.png) - Image of it capturing and sending with webhook data over 
 
+![Diagram](Diagram11.png) - Image of record that went through entire process and is at dispatched 
+
 ## Business Value
 ### Analysis of how the system improves PepsiCo's supply chain operations, reduces manual intervention, and optimizes delivery cost management
 
