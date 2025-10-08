@@ -1,0 +1,126 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+// Webhook input data\
+\
+[\
+  \{\
+    "headers": \{\
+      "host": "kayla-kelly-rise-up-1025.app.n8n.cloud",\
+      "user-agent": "ServiceNow/1.0",\
+      "content-length": "136",\
+      "accept": "application/json",\
+      "accept-encoding": "gzip, br",\
+      "cdn-loop": "cloudflare; loops=1; subreqs=1",\
+      "cf-connecting-ip": "4.223.224.92",\
+      "cf-ew-via": "15",\
+      "cf-ipcountry": "SE",\
+      "cf-ray": "98b1c22715c7f9e2-ARN",\
+      "cf-visitor": "\{\\"scheme\\":\\"https\\"\}",\
+      "cf-worker": "n8n.cloud",\
+      "content-type": "application/json",\
+      "x-forwarded-for": "4.223.224.92, 104.23.223.125",\
+      "x-forwarded-host": "kayla-kelly-rise-up-1025.app.n8n.cloud",\
+      "x-forwarded-port": "443",\
+      "x-forwarded-proto": "https",\
+      "x-forwarded-server": "traefik-prod-users-gwc-9-7bb7d4c57c-kbbb2",\
+      "x-is-trusted": "yes",\
+      "x-real-ip": "4.223.224.92",\
+      "x-snc-integration-source": "c58d1433c322a650d7299dcd2b013183"\
+    \},\
+    "params": \{\},\
+    "query": \{\},\
+    "body": \{\
+      "route_id": "736844",\
+      "truck_id": "8922",\
+      "chosen_option": [\
+        \{\
+          "option_id": "opt-1",\
+          "route_number": 12,\
+          "distance_miles": 131,\
+          "eta_minutes": 165\
+        \}\
+      ]\
+    \},\
+    "webhookUrl": "https://kayla-kelly-rise-up-1025.app.n8n.cloud/webhook-test/0a6daad4-163c-4bb7-bde8-57c05c402e22",\
+    "executionMode": "test"\
+  \}\
+]\
+\
+\
+// AI Agent Node OUTPUT data\
+\
+[\
+  \{\
+    "output": [\
+      \{\
+        "type": "reasoning_content",\
+        "reasoningText": \{\
+          "text": "The user asked to connect to three MCP client tools with payloads. We have executed them. Now need to respond summarizing success.\\n\\nProvide confirmation."\
+        \}\
+      \},\
+      \{\
+        "type": "text",\
+        "text": "All three MCP actions have been completed successfully:\\n\\n| MCP Client | Action | Result |\\n|------------|--------|--------|\\n| **Logistics** | `execute_route` | Route **736844** dispatched to truck **8922** with option **opt\uc0\u8209 1** (route\u8239 #12, 131\u8239 mi, ETA\u8239 165\u8239 min). |\\n| **Retail** | `notify_delivery_delay` | Delivery\u8209 delay notification recorded for route **736844**, truck **8922**, option **opt\u8209 1** (same details as above). |\\n| **ServiceNow** | `update_execution_status` | Execution status for route **736844** updated to **\'93dispatched\'94** (record\u8239 ID `7e0bb9cc83a472107f44168c50da1e2b`). |\\n\\nIf you need any further updates or have additional instructions, just let me know!"\
+      \}\
+    ]\
+  \}\
+]\
+\
+\
+// Logistics MCP Client OUTPUT data\
+\
+\
+[\
+  \{\
+    "response": [\
+      \{\
+        "type": "text",\
+        "text": "\{\\n  \\"ok\\": true,\\n  \\"message\\": \\"route selected\\",\\n  \\"route_id\\": \\"736844\\",\\n  \\"truck_id\\": \\"8922\\",\\n  \\"chosen_option\\": \{\\n    \\"option_id\\": \\"opt-1\\",\\n    \\"route_number\\": 12,\\n    \\"distance_miles\\": 131,\\n    \\"eta_minutes\\": 165\\n  \}\\n\}"\
+      \}\
+    ]\
+  \}\
+]\
+\
+\
+// Retail MCP Client OUPUT data\
+\
+\
+[\
+  \{\
+    "response": [\
+      \{\
+        "type": "text",\
+        "text": "\{\\n  \\"ok\\": true,\\n  \\"notification_id\\": \\"e3fcac06-cea0-4d5f-9651-e62590dd5908\\",\\n  \\"received_at\\": \\"2025-10-08T01:12:07.782038Z\\",\\n  \\"route_id\\": \\"736844\\",\\n  \\"truck_id\\": \\"8922\\",\\n  \\"chosen_option\\": \{\\n    \\"option_id\\": \\"opt-1\\",\\n    \\"route_number\\": 12,\\n    \\"distance_miles\\": 131,\\n    \\"eta_minutes\\": 165\\n  \}\\n\}"\
+      \}\
+    ]\
+  \}\
+]\
+\
+\
+// ServiceNow MCP Client OUTPUT data\
+\
+\
+\
+[\
+\{\
+"response": \
+[\
+\{\
+"type": \
+"text",\
+"text": \
+"\{\\n  \\"route_id\\": \\"736844\\",\\n  \\"updates\\": [\\n    \{\\n      \\"student_id\\": \\"sn-0011\\",\\n      \\"instance\\": \\"https://kura-labs-jul-4728-0011.lab.service-now.com\\",\\n      \\"updated\\": true,\\n      \\"status_code\\": 200,\\n      \\"sys_id\\": \\"7e0bb9cc83a472107f44168c50da1e2b\\",\\n      \\"error\\": null\\n    \}\\n  ]\\n\}"\
+\}\
+]\
+\}\
+]\
+\
+\
+}
